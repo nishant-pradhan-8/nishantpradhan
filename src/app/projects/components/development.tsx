@@ -80,7 +80,7 @@ export default function Development() {
                     />
                     Live Website
                   </a>
-                  <a target="_blank" href={project.projectUrl} className="group bg-transparent hover:bg-white hover:text-black items-center border-[1px] text-[1rem] flex flex-row gap-2 text-white p-2 px-6 cursor-pointer rounded-4xl max-[375px]:px-2">
+                  <a target="_blank" href={project.projectGithub} className="group bg-transparent hover:bg-white hover:text-black items-center border-[1px] text-[1rem] flex flex-row gap-2 text-white p-2 px-6 cursor-pointer rounded-4xl max-[375px]:px-2">
   <Image
     className="group-hover:brightness-0 transition-all duration-300"
     src="/images/github-white.svg"
