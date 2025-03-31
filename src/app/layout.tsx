@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Zain } from "next/font/google";
+import {Zain } from "next/font/google";
 
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const zain = Zain({
   weight: "400",
@@ -15,10 +10,6 @@ const zain = Zain({
 
 
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Nishant Pradhan - Portfolio Site",
