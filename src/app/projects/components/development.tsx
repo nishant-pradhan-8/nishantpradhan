@@ -15,7 +15,7 @@ export default function Development() {
       projectDescription:
         "An application that allows students to organize and manage their study materials in one place, connect with friends, and share study resources with eachother. It also includes additional features like event scheduling.",
       techUsed: ["Mongodb", "ExpressJs", "NextJs", "TypeScript", "Firebase"],
-      projectUrl: "study-buddyy.vercel.app",
+      projectUrl: "https://study-buddyy.vercel.app",
       projectGithub:"https://github.com/nishant-pradhan-8/study-buddy"
     },
     {
