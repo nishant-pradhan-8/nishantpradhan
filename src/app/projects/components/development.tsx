@@ -11,7 +11,7 @@ export default function Development() {
   const developmentProjects:DevelopmentProject[] = [
     {
       id: 1,
-      projectName: "Study Management Application",
+      projectName: "Study Buddyy (Study Management Application)",
       projectDescription:
         "An application that allows students to organize and manage their study materials in one place, connect with friends, and share study resources with eachother. It also includes additional features like event scheduling.",
       techUsed: ["Mongodb", "ExpressJs", "NextJs", "TypeScript", "Firebase"],

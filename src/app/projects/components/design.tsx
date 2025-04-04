@@ -9,14 +9,14 @@ export default function Design() {
   const designProjects: DesignProject[] = [
     {
         id: 1,
-        projectName: "Agency Website Design",
+        projectName: "Eight's Advertising (Agency Website Design)",
         projectDescription:"A  web design for a agencies like social media marketing agency",
         dribbleUrl:
           "https://dribbble.com/shots/25844090-Agency-Website-Design?utm_source=Clipboard_Shot&utm_campaign=webdesigner_nishant&utm_content=Agency%20Website%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=webdesigner_nishant&utm_content=Agency%20Website%20Design&utm_medium=Social_Share",
       },
     {
       id: 2,
-      projectName: "Restaurant Website Design",
+      projectName: "Street Light Restaurant (Restaurant Website Design)",
       projectDescription:"A simple web design for a Restaurant Business",
       dribbleUrl:
         "https://dribbble.com/shots/25844058-Restaurant-Website-Design?utm_source=Clipboard_Shot&utm_campaign=webdesigner_nishant&utm_content=Restaurant%20Website%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=webdesigner_nishant&utm_content=Restaurant%20Website%20Design&utm_medium=Social_Share",
@@ -24,14 +24,14 @@ export default function Design() {
    
     {
       id: 3,
-      projectName: "Furnishing Business Website Design",
+      projectName: "Luxe Furnishing (Furnishing Business Website Design)",
       projectDescription:"A  web design for a Furnishing Business",
       dribbleUrl:
         "https://dribbble.com/shots/25844110-Furnishing-Business-Website-Design?utm_source=Clipboard_Shot&utm_campaign=webdesigner_nishant&utm_content=Furnishing%20Business%20Website%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=webdesigner_nishant&utm_content=Furnishing%20Business%20Website%20Design&utm_medium=Social_Share",
     },
     {
       id: 4,
-      projectName: "Restaurant Website Design",
+      projectName: "Cozy (Restaurant Website Design)",
       projectDescription:"Another simple web design for a Restaurant Business",
       dribbleUrl:
         "https://dribbble.com/shots/25844069-Restaurant-Website-Design?utm_source=Clipboard_Shot&utm_campaign=webdesigner_nishant&utm_content=Restaurant%20Website%20Design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=webdesigner_nishant&utm_content=Restaurant%20Website%20Design&utm_medium=Social_Share",
