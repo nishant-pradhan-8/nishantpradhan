@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {Zain } from "next/font/google";
-
+import Head from 'next/head'
 import "./globals.css";
 
 const zain = Zain({
@@ -23,9 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <body
-        className={`${zain.className}  antialiased`}
+        className={`${zain.className}  bg-black text-white  antialiased`}
       >
+       
         {children}
       </body>
     </html>

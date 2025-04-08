@@ -44,7 +44,7 @@ export default function Design() {
         {designProjects.map((project) => (
           <div
             key={project.id}
-            className="border-[2px] border-gray-500 w-[300px] transition-transform duration-300 ease-in-out hover:scale-102 max-[648px]:w-[100%] p-4 rounded-2xl flex  flex-col gap-4"
+            className="border-[2px] border-gray-500 w-[300px] transition-transform duration-300 ease-in-out hover:scale-102 max-[648px]:w-full p-4 rounded-2xl flex  flex-col gap-4"
           >
             <h3 className="text-2xl font-semibold">
               {project.projectName}
