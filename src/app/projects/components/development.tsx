@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import Image from "next/image";
 export interface DevelopmentProject {
   id: number;
   projectName: string;
@@ -7,29 +8,32 @@ export interface DevelopmentProject {
   techUsed: string[];
   projectUrl: string;
   projectGithub: string;
-  images:string[]
+  images:string[];
+  logo:string;
 }
 export const developmentProjects: DevelopmentProject[] = [
   {
     id: 1,
-    projectName: "Study Buddyy (Study Management Application)",
+    projectName: "Study Buddyy",
     projectDescription:
-      "An application that allows students to organize and manage their study materials in one place, connect with friends, and share study resources with eachother. It also includes additional features like event scheduling.",
+      "Study Buddy is a study management application.It allows students to organize and manage their study materials in one place, connect with their friends, and share study resources with eachother. It also includes additional features like event scheduling.",
     techUsed: ["Mongodb", "ExpressJs", "NextJs", "TypeScript", "Firebase"],
     projectUrl: "https://study-buddyy.vercel.app",
     projectGithub: "https://github.com/nishant-pradhan-8/study-buddy",
-    images:["sb-i1.png","sb-i7.png","sb-i2.png","sb-i3.png","sb-i4.png","sb-i5.png","sb-i8.png","sb-i6.png"]
+    images:["sb-i1.png","sb-i7.png","sb-i2.png","sb-i3.png","sb-i4.png","sb-i5.png","sb-i8.png","sb-i6.png"],
+    logo:'/images/studybuddy.svg'
     
   },
   {
     id: 2,
-    projectName: "Link Sharing Application",
+    projectName: "Dev Links",
     projectDescription:
-      "A web app that allows users to organize and manage URLs of their social media and other website profiles in one place. Users can create accounts and share their profile link where reciever will have access to all the sender's social profiles. This is a challange project from frontendmentor.io",
+      "Dev Links is a Link Sharing Application for developers. It allows developers to organize and manage URLs of their daily using tools like github, youtube, linkedin etc in one place. Developers can create accounts and share their profile link where reciever will have access to all their profiles. This is a challange project from frontendmentor.io",
     techUsed: ["React Js", "Firebase"],
     projectUrl: "https://nishant-pradhan-8.github.io/link-sharing-app",
     projectGithub: "https://github.com/nishant-pradhan-8/link-sharing-app",
-    images:["sb2-i1.png","sb2-i2.png","sb2-i3.png","sb2-i4.png","sb2-i5.png"]
+    images:["sb2-i1.png","sb2-i2.png","sb2-i3.png","sb2-i4.png","sb2-i5.png"],
+    logo:'/images/devlinks.svg'
   },
   {
     id: 3,
@@ -39,7 +43,8 @@ export const developmentProjects: DevelopmentProject[] = [
     techUsed: ["React Js"],
     projectUrl: "https://nishant-pradhan-8.github.io/hangman-game/",
     projectGithub: "https://github.com/nishant-pradhan-8/hangman-game",
-    images:["sb3-i1.png","sb3-i2.png","sb3-i3.png"]
+    images:["sb3-i1.png","sb3-i2.png","sb3-i3.png"],
+    logo:'/images/hangman.svg'
   },
   {
     id: 4,
@@ -49,7 +54,8 @@ export const developmentProjects: DevelopmentProject[] = [
     techUsed: ["React Js"],
     projectUrl: "https://nishant-pradhan-8.github.io/quiz-app/",
     projectGithub: "https://github.com/nishant-pradhan-8/quiz-app",
-    images:["sb4-i1.png","sb4-i2.png","sb4-i3.png","sb4-i4.png"]
+    images:["sb4-i1.png","sb4-i2.png","sb4-i3.png","sb4-i4.png"],
+    logo:'/images/quiz.svg'
   },
 ];
 export default function Development() {
@@ -57,7 +63,7 @@ export default function Development() {
   return (
     <div>
       <h2 className="text-3xl mt-8 mb-4  max-[1263px]:text-center  max-[1263px]:text-red">
-        Development Project
+        Development Projects
       </h2>
       <div className="flex flex-row justify-start flex-wrap gap-4 max-[1263px]:justify-center">
         {developmentProjects.map((project) => (
@@ -65,8 +71,20 @@ export default function Development() {
             key={project.id}
             className="border-[2px] border-gray-500 max-[848px]:max-w-[300px] max-[648px]:max-w-[100%]   max-w-[400px] p-4 rounded-2xl flex  flex-col gap-4 transition-transform duration-300 ease-in-out hover:scale-102"
           >
-            <h3 className="text-2xl font-semibold">{project.projectName}</h3>
-            <p className="text-xl">{project.projectDescription}</p>
+            <div className="flex flex-row items-center gap-4">
+              <div className="bg-white w-12 h-12 flex flex-row items-center justify-center rounded-xl">
+              <Image
+                        src={project.logo}
+                        alt="email"
+                        width={40}
+                        height={40}
+                      />
+              </div>
+           
+            <h3 className="text-2xl font-semibold ">{project.projectName}</h3>
+            </div>
+          
+        {  <p className="text-xl">{project.projectDescription}</p> } 
             <div className="flex flex-row flex-wrap gap-2">
               {project.techUsed.map((tech, i) => (
                 <div

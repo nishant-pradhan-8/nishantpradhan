@@ -1,6 +1,7 @@
 import { Iceland } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import Contact from "./contact";
 export const iceland = Iceland({
   weight: "400",
   subsets: ["latin"],
@@ -25,7 +26,7 @@ export default function Main() {
           NISHANT PRADHAN
         </h1>
         <h2 className="text-3xl text-center">FullStack Web Developer.</h2>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row  gap-4">
           <a
             target="_blank"
             href="https://github.com/nishant-pradhan-8"
@@ -54,8 +55,8 @@ export default function Main() {
             Projects
           </Link>
         </div>
-        <div className="flex flex-col items-center">
-          <div className="flex flex-row gap-4">
+        <div className="flex flex-col  items-center">
+          <div className="flex flex-row gap-4 flex-wrap justify-center">
             <Image
               className="transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
               title="MongoDB"
@@ -88,6 +89,22 @@ export default function Main() {
               width={40}
               height={40}
             />
+             <Image
+              className="transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
+              title="Php"
+              src="/images/php.svg"
+              alt="php-logo"
+              width={50}
+              height={50}
+            />
+             <Image
+              className="transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
+              title="laravel"
+              src="/images/laravel.svg"
+              alt="laravel-logo"
+              width={40}
+              height={40}
+            />
             <Image
               className="transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
               title="Figma"
@@ -107,56 +124,7 @@ export default function Main() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-5">
-        <h2 className="text-3xl">Lets Get in Touch.</h2>
-        <div className="flex flex-row gap-8  flex-wrap justify-center">
-          <a
-            target="_blank"
-            href="https://www.instagram.com/nishantpradhann?igsh=MXhpM2ZhamEyOWdrcA%3D%3D&utm_source=qr"
-            className="font-sans flex flex-row gap-2 cursor-pointer items-center"
-          >
-            <Image
-              src="/images/instagram.svg"
-              alt="Mongodb-logo"
-              width={25}
-              height={25}
-            />
-          <p className="hover:underline">@nishantpradhann</p>  
-          </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/nishant-pradhan8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-            className="font-sans flex flex-row gap-2 cursor-pointer items-center "
-          >
-            <Image
-              src="/images/linkedin.svg"
-              alt="linkedin-logo"
-              width={25}
-              height={25}
-            />
-            <p className="hover:underline">
-            /nishant-pradhan8
-            </p>
-         
-          </a>
-          <a
-            target="_blank"
-            href="tel:+977 9819180805"
-            className="font-sans flex flex-row gap-2 cursor-pointer items-center "
-          >
-            <Image
-              src="/images/call.svg"
-              alt="Call-logo"
-              width={25}
-              height={25}
-            />
-            <p className="hover:underline">
-            +977 9819180805
-            </p>
-         
-          </a>
-        </div>
-      </div>
+     <Contact />
     </div>
   );
 }
