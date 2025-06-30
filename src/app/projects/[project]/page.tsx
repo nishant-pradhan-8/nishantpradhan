@@ -1,6 +1,5 @@
-import { iceland } from "@/components/main";
-import { developmentProjects } from "../components/development";
-import { DevelopmentProject } from "../components/development";
+import { DevelopmentProject } from "../data/db";
+import { developmentProjects } from "../data/db";
 import Image from "next/image";
 export default async function ProjectPage({
   params,
@@ -8,12 +7,13 @@ export default async function ProjectPage({
   params: Promise<{ project: string }>;
 }) {
   const project = (await params).project;
+
   const associatedProject: DevelopmentProject | null =
     developmentProjects.find((proj) => proj.id === Number(project)) || null;
   return (
     <div className="p-2">
       <div className="my-12 flex flex-col gap-4 items-center">
-        <h1 className={`${iceland.className} text-center text-4xl `}>
+        <h1 className={` text-center text-4xl `}>
           {associatedProject?.projectName || "Page not found"}
         </h1>
         <div className="w-full  ">
@@ -23,7 +23,7 @@ export default async function ProjectPage({
           <div className="flex flex-row w-full  justify-center gap-4 mt-4 ">
             <a
               target="_blank"
-              href={associatedProject?.projectUrl}
+              href={associatedProject?.projectUrl || "#"}
               className="bg-gray-200 flex flex-row items-center gap-2 text-[1rem] text-black p-2 px-4 cursor-pointer rounded-4xl max-[375px]:px-2 hover:bg-gray-300"
             >
               <Image
@@ -54,13 +54,20 @@ export default async function ProjectPage({
 
       <div className="flex items-center flex-col justify-center">
         <h2 className="text-3xl mb-2 text-center">Website Images</h2>
-       <div className="flex flex-row flex-wrap gap-4 justify-center   ">
-       {associatedProject?.images.map((img,i)=>(
-        <Image key={i} className=" transition-transform duration-300 ease-in-out hover:scale-102" src={`/images/${img}`} width={500} height={500} alt="images" />
-       ))}
-       </div>
+        <div className="flex flex-row flex-wrap gap-4 justify-center   ">
+          {associatedProject?.images &&
+            associatedProject?.images.map((img, i) => (
+              <Image
+                key={i}
+                className=" transition-transform duration-300 ease-in-out hover:scale-102"
+                src={`/images/${img}`}
+                width={500}
+                height={500}
+                alt="images"
+              />
+            ))}
+        </div>
       </div>
     </div>
   );
 }
-/*   <ImageCarausel images={associatedProject?.images || null} />*/

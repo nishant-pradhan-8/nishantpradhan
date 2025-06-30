@@ -22,7 +22,9 @@ export default function Main() {
         </div>
       </div>
       <div className="flex flex-col items-center gap-5">
-        <h1 className={`${iceland.className} text-center text-6xl font-semibold `}>
+        <h1
+          className={`${iceland.className} text-center text-6xl font-semibold `}
+        >
           NISHANT PRADHAN
         </h1>
         <h2 className="text-3xl text-center">FullStack Web Developer.</h2>
@@ -89,7 +91,7 @@ export default function Main() {
               width={40}
               height={40}
             />
-             <Image
+            <Image
               className="transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
               title="Php"
               src="/images/php.svg"
@@ -97,7 +99,7 @@ export default function Main() {
               width={50}
               height={50}
             />
-             <Image
+            <Image
               className="transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
               title="laravel"
               src="/images/laravel.svg"
@@ -124,7 +126,7 @@ export default function Main() {
           </div>
         </div>
       </div>
-     <Contact />
+      <Contact />
     </div>
   );
 }
