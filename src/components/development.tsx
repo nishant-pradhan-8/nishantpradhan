@@ -70,7 +70,7 @@ export default function Development() {
               {
                 <Link
                   href={
-                    project.projectUrl
+                    project.id!==6
                       ? `/projects/${project.id}`
                       : project.projectGithub
                   }
