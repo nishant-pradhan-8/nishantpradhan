@@ -38,8 +38,29 @@ export const developmentProjects: DevelopmentProject[] = [
     ],
     logo: "/images/studybuddy.svg",
   },
+  
   {
     id: 2,
+    projectName: "Quizifiy",
+    projectDescription:
+      "An AI-powered web application that helps students revise and test their knowledge by automatically converting their study materials (PDFs, images, or text documents) into interactive quizzes",
+    techUsed: ["Next Js", "Express Js", "TypeScript", "AI Model: tngtech/deepseek-r1t2-chimera" ],
+    projectUrl: "https://quizifiy.vercel.app/",
+    projectGithub: "https://github.com/nishant-pradhan-8/quizify",
+    images: [
+    
+      "sb5-i1.png",
+      "sb5-i2.png",
+      "sb5-i3.png",
+      "sb5-i4.png",
+      "sb5-i5.png",
+   
+    
+    ],
+    logo: "/images/ai.svg",
+  },
+  {
+    id: 3,
     projectName: "The Hangout",
     projectDescription:
       "A full-stack real-time chat application that allows users to register, log in, and participate in a live group chat environment. Messages are sent and received instantly using WebSockets, and all chat history is securely stored in a database.",
@@ -55,7 +76,7 @@ export const developmentProjects: DevelopmentProject[] = [
     logo: "/images/chat.svg",
   },
   {
-    id: 3,
+    id: 4,
     projectName: "Dev Links",
     projectDescription:
       "Dev Links is a Link Sharing Application for developers to manage and share all their important links (GitHub, YouTube, LinkedIn, etc.) through a single profile. Users can create accounts and generate a public link to share their profiles. This is a project from frontendmentor.io",
@@ -72,7 +93,7 @@ export const developmentProjects: DevelopmentProject[] = [
     logo: "/images/devlinks.svg",
   },
   {
-    id: 4,
+    id: 5,
     projectName: "Hangman Game",
     projectDescription:
       "A classic Hangman game where user will guess the correct word and if they are able to guess the correct word within the limited chances, They Win! This is a challange project from frontendmentor.io",
@@ -83,7 +104,7 @@ export const developmentProjects: DevelopmentProject[] = [
     logo: "/images/hangman.svg",
   },
   {
-    id: 5,
+    id: 6,
     projectName: "Quiz Web App",
     projectDescription:
       "A quiz application where users can test their knowledge on various technical topics through series of muliple-choice questions. This is a challange project from frontendmentor.io",
@@ -94,7 +115,7 @@ export const developmentProjects: DevelopmentProject[] = [
     logo: "/images/quiz.svg",
   },
   {
-    id: 6,
+    id: 7,
     projectName: "Moksh Travels",
     projectDescription:
       "A website from travel agencies for handling booking and business management",
