@@ -32,7 +32,7 @@ export default function Skills() {
             </div>
             <div className="flex flex-row  gap-2 text-xl">
               <ArrowRightIcon className="text-secondary-orange" />
-              <p>Java</p>
+              <p>Python</p>
             </div>
             <div className="flex flex-row  gap-2 text-xl">
               <ArrowRightIcon className="text-secondary-orange" />
@@ -42,19 +42,24 @@ export default function Skills() {
           <div>
             <div className="flex flex-row  gap-2 text-xl">
               <ArrowRightIcon className="text-secondary-orange" />
-              <p>React</p>
+              <p>React(Next.js)</p>
             </div>
-            <div className="flex flex-row  gap-2 text-xl">
-              <ArrowRightIcon className="text-secondary-orange" />
-              <p>Next.Js</p>
-            </div>
+            
             <div className="flex flex-row  gap-2 text-xl">
               <ArrowRightIcon className="text-secondary-orange" />
               <p>Express</p>
             </div>
             <div className="flex flex-row  gap-2 text-xl">
               <ArrowRightIcon className="text-secondary-orange" />
+              <p>Django</p>
+            </div>
+              <div className="flex flex-row  gap-2 text-xl">
+              <ArrowRightIcon className="text-secondary-orange" />
               <p>Laravel</p>
+            </div>
+            <div className="flex flex-row  gap-2 text-xl">
+              <ArrowRightIcon className="text-secondary-orange" />
+              <p>Docker</p>
             </div>
           </div>
         </div>
