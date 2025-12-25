@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ExperienceMain() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-8">
       <div className="grid grid-cols-[1fr_2fr] items-start  ">
         <div className="">
           <div className="border-r-[5px] h-[3.5rem] border-secondary-orange">
