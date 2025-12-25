@@ -20,7 +20,7 @@ export default function Development() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 max-[1263px]:justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-[1263px]:justify-center">
         {developmentProjects.map((project) => (
           <div
             key={project.id}
@@ -37,7 +37,7 @@ export default function Development() {
                   />
                 </div>
 
-                <h3 className="text-2xl font-semibold ">
+                <h3 className="text-xl font-semibold ">
                   {project.projectName}
                 </h3>
               </div>
@@ -54,7 +54,7 @@ export default function Development() {
               </div>
             </div>
 
-            {<p className="text-xl">{project.projectDescription}</p>}
+            {<p className="text-[1.1rem]">{project.projectDescription}</p>}
             <div className="flex flex-row flex-wrap gap-2">
               {project.techUsed.map((tech, i) => (
                 <div

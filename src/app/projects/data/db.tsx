@@ -44,7 +44,7 @@ export const developmentProjects: DevelopmentProject[] = [
     projectName: "Quizifiy",
     projectDescription:
       "An AI-powered web application that helps students revise and test their knowledge by automatically converting their study materials (PDFs, images, or text documents) into interactive quizzes",
-    techUsed: ["Next Js", "Express Js", "TypeScript", "AI Model: tngtech/deepseek-r1t2-chimera" ],
+    techUsed: ["Next Js", "Express Js", "TypeScript", "AI Model: deepseek-r1t2-chimera" ],
     projectUrl: "https://quizifiy.vercel.app/",
     projectGithub: "https://github.com/nishant-pradhan-8/quizify",
     images: [
