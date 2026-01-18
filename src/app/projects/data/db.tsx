@@ -59,22 +59,7 @@ export const developmentProjects: DevelopmentProject[] = [
     ],
     logo: "/images/ai.svg",
   },
-  {
-    id: 3,
-    projectName: "The Hangout",
-    projectDescription:
-      "A full-stack real-time chat application that allows users to register, log in, and participate in a live group chat environment. Messages are sent and received instantly using WebSockets, and all chat history is securely stored in a database.",
-    techUsed: ["Mongodb", "Express Js", "ReactJs", "TypeScript", "Socket.io"],
-    projectUrl: null,
-    projectGithub: "https://github.com/nishant-pradhan-8/chatroom",
-    images: [
-      "login.png",
-      "registration.png",
-      "home.png",
-      "messages.png",
-    ],
-    logo: "/images/chat.svg",
-  },
+ 
   {
     id: 4,
     projectName: "Dev Links",
@@ -91,6 +76,33 @@ export const developmentProjects: DevelopmentProject[] = [
       "sb2-i5.png",
     ],
     logo: "/images/devlinks.svg",
+  },
+  {
+    id: 8,
+    projectName: "Movie Reservation System",
+    projectDescription:
+      "A backend system for managing movie listings, showtimes, seat availability, and ticket reservations. Supports secure user authentication, seat booking, and reservation management. Designed to serve as a backend for web or mobile cinema booking applications.",
+    techUsed: ["Django", "Django-Ninja", "Postgresql", "Redis"],
+    projectUrl: null,
+    projectGithub: "https://github.com/nishant-pradhan-8/movie-reservation-system-backend",
+    images:null,
+    logo: "/images/movie.svg",
+  },
+   {
+    id: 3,
+    projectName: "The Hangout",
+    projectDescription:
+      "A full-stack real-time chat application that allows users to register, log in, and participate in a live group chat environment. Messages are sent and received instantly using WebSockets, and all chat history is securely stored in a database.",
+    techUsed: ["Mongodb", "Express Js", "ReactJs", "TypeScript", "Socket.io"],
+    projectUrl: null,
+    projectGithub: "https://github.com/nishant-pradhan-8/chatroom",
+    images: [
+      "login.png",
+      "registration.png",
+      "home.png",
+      "messages.png",
+    ],
+    logo: "/images/chat.svg",
   },
   {
     id: 5,
@@ -125,6 +137,7 @@ export const developmentProjects: DevelopmentProject[] = [
     images: null,
     logo: "/images/travel.svg",
   },
+
 
 ];
 export const designProjects: DesignProject[] = [
